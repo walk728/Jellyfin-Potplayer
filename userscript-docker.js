@@ -13,7 +13,7 @@
     ApiClient.getItem(userid, itemid).then(r => {
       if (r.Path) {
         let path = r.Path.replace(/\\/g, '/');
-        path = path.replace('Video', '/192.168.123.9/video');
+        path = path.replace('video', '/192.168.123.9/video');
         console.log(path);
         window.open('potplayer://' + path)
       } else {
